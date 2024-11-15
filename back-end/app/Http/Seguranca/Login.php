@@ -53,8 +53,7 @@ class Login
 
                 return Response::jsonEnum(Sucesso::LOGIN_COM_SUCESSO, null, $objeto_retorno);
             } else {
-                Log::error('Dados invalidos no login: ' . json_encode($request->all()) . 'IP do usuário: ' . $ipUsuario);
-
+             
                 //apresenta o mínimo de informações possíveis.
                 return response()->json([
                     'status' => 401,

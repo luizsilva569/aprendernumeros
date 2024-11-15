@@ -1,0 +1,176 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* Altura total da janela */
+    display: flex;
+    flex-direction: column;
+    /* Organiza o conteúdo em coluna */
+      background: linear-gradient(135deg, #2C3E50, #4A4A4A, #1A1A1A); /* Gradiente escuro com tons de roxo e cinza */
+}
+
+
+
+#corpo {
+    flex-grow: 1;
+    /* Faz o conteúdo ocupar o espaço restante */
+}
+
+#rodape {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding-right: 40px;
+    margin: 0px;
+    width: 100%;
+    /* Largura total */
+    height: 8vh;
+
+    /* Sombra na borda superior */
+    display: flex;
+    /* Usando flexbox para centralizar conteúdo */
+    align-items:flex-end;
+    /* Centraliza verticalmente */
+    justify-content:end;
+    /* Centraliza horizontalmente */
+    color: rgb(165, 165, 165);
+
+    font-size: 1em;
+    /* Tamanho da fonte */
+}
+
+#quadroQuestao {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    width: 90%;
+    height: 30vh;
+
+}
+
+#textoQuadroQuestao {
+    margin-top: 5vh;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 200%;
+    font-weight: 400;
+}
+
+#resposta {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    margin-top: 5vh;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 120%;
+    font-weight: 300;
+}
+
+#formResposta {
+    text-align: center;
+    font-size: 120%;
+    font-weight: 700;
+
+}
+
+.botoesFormulario{
+    display: flex;                  /* Ativa o modelo flexbox */
+    justify-content: center;        /* Centraliza os botões horizontalmente */
+    align-items: center;            /* Alinha os botões verticalmente no centro */
+}
+
+.button-container button {
+    margin: 0 10px;                /* Adiciona uma margem de 10px em cada lado do botão */
+}
+
+#formularioUsuario{
+    max-width: 400px; /* Largura máxima do formulário */
+    margin: 20px auto; /* Centraliza o formulário na página */
+    padding: 20px; /* Espaçamento interno do formulário */
+    border: 1px solid #ccc; /* Borda leve */
+    border-radius: 5px; /* Cantos arredondados */
+    background-color: #f9f9f9; /* Cor de fundo leve */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Estilo dos rótulos */
+.form-label {
+    font-weight: bold; /* Negrito nos rótulos */
+    margin-bottom: 5px; /* Espaço abaixo do rótulo */
+    display: block; /* Faz com que o rótulo ocupe toda a largura disponível */
+}
+
+/* Estilo dos campos de entrada */
+.form-control {
+    width: 100%; /* Largura total do campo */
+    padding: 10px; /* Espaçamento interno do campo */
+    margin-bottom: 15px; /* Espaço abaixo de cada campo */
+    border: 1px solid #ccc; /* Borda leve */
+    border-radius: 5px; /* Cantos arredondados */
+    box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura total */
+}
+
+/* Estilo do botão */
+.btn {
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    padding: 10px 15px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+/* Efeito de hover no botão */
+.btn:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo para exibir mensagens de erro */
+.error-message {
+    color: red; /* Cor do texto de erro */
+    font-size: 0.875em; /* Tamanho da fonte menor */
+    margin-top: -10px; /* Espaço negativo acima da mensagem */
+    margin-bottom: 10px; /* Espaço abaixo da mensagem */
+}
+
+/* Ajuste para garantir que a navbar ocupe toda a largura da tela */
+    .navbar {
+        width: 100%;
+        background-color: #333; /* Cor de fundo da navbar */
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 10px 0;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    .navbar a {
+        font-size: 1.1rem;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 0 15px;
+        display: inline-block;
+    }
+
+    
+
+@media (max-width: 600px) {
+    #formularioUsuario {
+        padding: 20px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+.a {
+    font-size: 1.5em
+}

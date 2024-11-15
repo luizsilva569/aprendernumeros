@@ -33,11 +33,7 @@ class Login
             $usuario_encontrado = self::pesquisarUsuario_ParaLogin($email);
 
             // Verifica se o usuário existe
-            if (!$usuario_encontrado) {
-                Log::error('Usuário não encontrado', [
-                    'request' => $request->all(),
-                    'IP do usuário' => $ipUsuario
-                ]);
+            if (!$usuario_encontrado) {                
                  return Response::jsonEnum(Erros::LOGIN_OU_SENHA_INVALIDOS, null);
             }
 

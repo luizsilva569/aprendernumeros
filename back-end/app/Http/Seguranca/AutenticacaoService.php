@@ -14,7 +14,7 @@ class AutenticacaoService
     // gera o segredo do token conforme o usuario
     private static function segredoToken()
     {
-        return "key_cheow_cheow_";
+        return "senha_segura";
     }
 
     // gera o segredo do token conforme o usuario
